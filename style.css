@@ -1,7 +1,9 @@
-*{ padding: 0;
+*:after,*{
+ padding: 0;
 margin: 0;
 box-sizing: border-box;
 text-decoration: none;
+position: relative;
 }
 
 body {
@@ -15,7 +17,13 @@ body {
 	padding: 40px;
 	margin-left: 31%;
 	margin-top: 10px;
+	animation: movimento 5s linear 2s infinite alternate;
 }
+@keyframes movimento {
+	from{left: -400px;}
+	to{left: 400px;}
+}
+
 
 .titulo{
 	font-size: 88px;
@@ -48,3 +56,5 @@ footer {
 	30% {color: blue}
   40% {transform: translatey (-50px)
   }
+
+ 
